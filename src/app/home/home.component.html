@@ -1,0 +1,21 @@
+<!-- src/app/home/home.component.html -->
+<div class="App">
+    <h1 class="heading">Search Report Criteria</h1>
+    <div class="input-container">
+      <label class="input-label">Customer ID:</label>
+      <input type="text" placeholder="12345" [(ngModel)]="customerId" class="input-field">
+    </div>
+    <div class="input-container">
+      <label class="input-label">Account Number:</label>
+      <input type="text" placeholder="Choose Account No" [(ngModel)]="accountNumber" class="input-field">
+    </div>
+    <div class="button-container">
+      <button (click)="handleBack()" class="button">Back</button>
+      <button (click)="handleView()" class="button">View</button>
+      <button (click)="handleExport()" class="button">Export</button>
+    </div>
+    <div class="table-container" *ngIf="filteredData.length > 0">
+      <app-table [filteredData]="filteredData"></app-table> <!-- Pass filteredData to app-table component -->
+    </div>
+  </div>
+  

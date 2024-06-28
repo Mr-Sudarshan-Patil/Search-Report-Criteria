@@ -1,0 +1,30 @@
+/* src/app/table/table.component.css */
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .data-table th {
+    background-color: #1a5276; /* Dark blue background for header */
+    color: white;
+  }
+  
+  .data-table td {
+    background-color: #f0f0f0; /* Light gray background for table cells */
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White background for even rows */
+  }
+  
+  .data-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray background for odd rows */
+  }
+  

@@ -1,0 +1,44 @@
+<!-- src/app/table/table.component.html -->
+<div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Account Number</th>
+          <th>NBK Reference</th>
+          <th>LC Type</th>
+          <th>Beneficiary Name</th>
+          <th>Issuance Date</th>
+          <th>Expiry Date</th>
+          <th>Tenor</th>
+          <th>Latest Shipment Date</th>
+          <th>Currency</th>
+          <th>Original LC Amount</th>
+          <th>Outstanding Amount</th>
+          <th>Outstanding Bill Amount</th>
+          <th>LC Provision</th>
+          <th>Bill Provision</th>
+          <th>Advising Bank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of filteredData; let i = index">
+          <td>{{ row.account }}</td>
+          <td>{{ row.nbkReference }}</td>
+          <td>{{ row.lcType }}</td>
+          <td>{{ row.beneficiary }}</td>
+          <td>{{ row.issuanceDate }}</td>
+          <td>{{ row.expiryDate }}</td>
+          <td>{{ row.tenor }}</td>
+          <td>{{ row.shipmentDate }}</td>
+          <td>{{ row.currency }}</td>
+          <td>{{ row.originalAmount }}</td>
+          <td>{{ row.outstandingAmount }}</td>
+          <td>{{ row.outstandingBillAmount }}</td>
+          <td>{{ row.lcProvision }}</td>
+          <td>{{ row.billProvision }}</td>
+          <td>{{ row.advisingBank }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

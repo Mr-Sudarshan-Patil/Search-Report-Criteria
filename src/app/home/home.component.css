@@ -1,0 +1,63 @@
+/* src/app/home/home.component.css */
+.App {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .heading {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .input-label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff; /* White background for input */
+    color: #333333; /* Dark text color for input */
+    width: 200px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a5276; /* Dark blue background for button */
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #145a8a; /* Darker blue on hover */
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
